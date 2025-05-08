@@ -2,6 +2,8 @@
 
 Una aplicación interactiva de **pixel art** creada con **React**. Permite a los usuarios diseñar ilustraciones pixeladas mediante una cuadrícula personalizable, con opciones para pintar, borrar, seleccionar colores y descargar el dibujo como imagen.
 
+🎨 [Ver aplicación en vivo](https://albahdezs.github.io/pixel-art/)
+
 ## ✨ Funcionalidades
 
 - 📏 Crear una cuadrícula personalizada (hasta 40×40).
