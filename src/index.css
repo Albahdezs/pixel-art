@@ -127,3 +127,9 @@ button:disabled {
   display: flex;
   gap: 10px;
 }
+
+/* -------------------------- Emiliano edit -------------------------- */
+
+.grid div {
+  cursor: url("/public/pencil-cursor.png") 0 38, auto;
+}
