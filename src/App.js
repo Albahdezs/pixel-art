@@ -10,6 +10,8 @@ export default function App() {
   const [isGridCreated, setIsGridCreated] = useState(false);
   const [isDrawing, setIsDrawing] = useState(false);
   const cellSize = 15;
+  const [pincelActivo, setPincelActivo] = useState(true);
+
 
   // Cargar cuadrícula desde localStorage al iniciar
   useEffect(() => {
@@ -210,6 +212,14 @@ export default function App() {
             >
               Borrar
             </button>
+
+            <button
+              className={`btn ${pincelActivo ? "active" : ""}`}
+              onClick={() => setPincelActivo(!pincelActivo)}
+           >
+            {pincelActivo ? "Desactivar pincel (Visual)" : "Activar pincel (visual)"}
+           </button>
+
             <button
               className={`btn ${mode === "picker" ? "active" : ""}`}
               onClick={() => setMode("picker")}
@@ -231,7 +241,7 @@ export default function App() {
 
       {/* Panel Derecho: Render de la cuadrícula */}
       <div
-        className="grid"
+        className={`grid ${pincelActivo ? "pincel-activo" : ""}`}
         style={{
           display: "grid",
           gridTemplateColumns: `repeat(${width}, ${cellSize}px)`,
