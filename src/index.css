@@ -127,3 +127,17 @@ button:disabled {
   display: flex;
   gap: 10px;
 }
+
+/* -------------------------- Emiliano edit -------------------------- */
+
+.pincel-activo div {
+  cursor: url("/public/pencil-cursor.png") 0 25, auto;
+}
+
+.grid {
+  cursor: default; /* o lo que necesites por defecto */
+}
+
+.pincel-activo {
+  cursor: crosshair;
+}
