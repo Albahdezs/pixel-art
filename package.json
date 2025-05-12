@@ -2,7 +2,7 @@
   "name": "pixelart",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://albahdezs.github.io/pixelart",
+  "homepage": "https://albahdezs.github.io/pixel-art",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
